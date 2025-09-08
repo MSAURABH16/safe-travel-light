@@ -85,7 +85,7 @@ export default function Medical() {
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold">Medical Services</h1>
         <Button variant="emergency" size="lg">
-          Emergency Call 911
+          Emergency Call 112
         </Button>
       </div>
 
@@ -239,18 +239,22 @@ export default function Medical() {
           <CardTitle>Emergency Contact Information</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="text-center p-4 border rounded-lg bg-destructive/10">
-              <h3 className="font-bold text-lg text-destructive">911</h3>
-              <p className="text-sm">Emergency Services</p>
+              <h3 className="font-bold text-lg text-destructive">112</h3>
+              <p className="text-sm">National Emergency</p>
             </div>
             <div className="text-center p-4 border rounded-lg bg-primary/10">
-              <h3 className="font-bold text-lg text-primary">311</h3>
-              <p className="text-sm">Non-Emergency</p>
+              <h3 className="font-bold text-lg text-primary">102</h3>
+              <p className="text-sm">Ambulance</p>
             </div>
             <div className="text-center p-4 border rounded-lg bg-success/10">
-              <h3 className="font-bold text-lg text-success">1-800-222-1222</h3>
-              <p className="text-sm">Poison Control</p>
+              <h3 className="font-bold text-lg text-success">108</h3>
+              <p className="text-sm">Emergency Response</p>
+            </div>
+            <div className="text-center p-4 border rounded-lg bg-warning/10">
+              <h3 className="font-bold text-lg text-warning">1066</h3>
+              <p className="text-sm">Child Helpline</p>
             </div>
           </div>
         </CardContent>
