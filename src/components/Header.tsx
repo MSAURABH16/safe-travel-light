@@ -7,6 +7,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Dashboard", href: "/dashboard" },
+  { name: "Places", href: "/places" },
+  { name: "Accessibility", href: "/accessibility" },
+  { name: "Restaurants", href: "/restaurants" },
+  { name: "Safety Info", href: "/safety-info" },
+  { name: "Medical", href: "/medical" },
+  { name: "Connectivity", href: "/connectivity" },
+  { name: "Volunteers", href: "/volunteers" },
   { name: "Register", href: "/register" },
   { name: "Emergency", href: "/emergency" },
 ];
