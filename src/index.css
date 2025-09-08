@@ -8,56 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Northeast India inspired colors - Tea gardens, Brahmaputra, traditional textiles */
-    --background: 132 20% 97%; /* Soft mint-green inspired by tea gardens */
-    --foreground: 120 15% 15%; /* Dark forest green for readability */
+    --background: 240 10% 98%;
+    --foreground: 215 25% 15%;
 
-    --card: 120 30% 98%;
-    --card-foreground: 120 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 120 30% 98%;
-    --popover-foreground: 120 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Kaziranga National Park and traditional indigo */
-    --primary: 201 89% 45%; /* Deep blue like Brahmaputra River */
+    --primary: 214 84% 56%;
     --primary-foreground: 0 0% 100%;
 
-    /* Tea garden greens */
-    --secondary: 132 45% 35%; /* Rich tea green */
+    --secondary: 143 64% 24%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 132 15% 95%;
-    --muted-foreground: 120 12% 45%;
+    --muted: 217 12% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Traditional golden yellow from silk and marigolds */
-    --accent: 45 95% 55%; /* Muga silk golden yellow */
-    --accent-foreground: 120 15% 15%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 215 25% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --warning: 32 85% 55%; /* Saffron/turmeric inspired */
-    --warning-foreground: 120 15% 15%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 215 25% 15%;
 
-    --success: 132 45% 35%; /* Tea garden green */
+    --success: 143 64% 24%;
     --success-foreground: 0 0% 100%;
 
-    --border: 132 12% 88%;
-    --input: 132 12% 88%;
-    --ring: 201 89% 45%;
+    --border: 217 12% 89%;
+    --input: 217 12% 89%;
+    --ring: 214 84% 56%;
 
-    /* Cultural elements */
-    --cultural-red: 0 75% 55%; /* Traditional Assamese red */
-    --cultural-orange: 25 85% 60%; /* Marigold orange */
-    --cultural-blue: 201 89% 45%; /* River blue */
-    --cultural-green: 132 45% 35%; /* Tea green */
-
-    /* Gradients inspired by sunrise over hills */
-    --gradient-dawn: linear-gradient(135deg, 25 85% 60%, 45 95% 55%);
-    --gradient-forest: linear-gradient(180deg, 132 45% 35%, 120 55% 25%);
-    --gradient-river: linear-gradient(45deg, 201 89% 45%, 220 70% 60%);
-
-    --radius: 0.75rem; /* Slightly rounded for organic feel */
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -77,51 +62,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode with Northeast night ambiance */
-    --background: 120 25% 8%; /* Deep forest night */
-    --foreground: 132 15% 92%;
+    --background: 215 28% 8%;
+    --foreground: 240 10% 94%;
 
-    --card: 120 25% 10%;
-    --card-foreground: 132 15% 92%;
+    --card: 215 28% 10%;
+    --card-foreground: 240 10% 94%;
 
-    --popover: 120 25% 10%;
-    --popover-foreground: 132 15% 92%;
+    --popover: 215 28% 10%;
+    --popover-foreground: 240 10% 94%;
 
-    --primary: 201 89% 55%; /* Moonlight on water */
+    --primary: 214 84% 56%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 132 35% 25%; /* Dark tea green */
+    --secondary: 143 64% 24%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 120 25% 15%;
-    --muted-foreground: 132 12% 65%;
+    --muted: 215 28% 15%;
+    --muted-foreground: 215 16% 65%;
 
-    --accent: 45 85% 65%; /* Soft golden glow */
-    --accent-foreground: 120 25% 8%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 215 28% 8%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --warning: 32 75% 60%;
-    --warning-foreground: 120 25% 8%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 215 28% 8%;
 
-    --success: 132 35% 25%;
+    --success: 143 64% 24%;
     --success-foreground: 0 0% 100%;
 
-    --border: 120 25% 18%;
-    --input: 120 25% 18%;
-    --ring: 201 89% 55%;
-    
-    /* Dark mode cultural elements */
-    --cultural-red: 0 65% 50%;
-    --cultural-orange: 25 75% 55%;
-    --cultural-blue: 201 89% 55%;
-    --cultural-green: 132 35% 25%;
-
-    /* Dark gradients */
-    --gradient-dawn: linear-gradient(135deg, 25 75% 40%, 45 85% 45%);
-    --gradient-forest: linear-gradient(180deg, 132 35% 25%, 120 45% 15%);
-    --gradient-river: linear-gradient(45deg, 201 89% 35%, 220 60% 45%);
+    --border: 215 28% 18%;
+    --input: 215 28% 18%;
+    --ring: 214 84% 56%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

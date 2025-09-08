@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Shield, Menu, Mountain } from "lucide-react";
+import { Shield, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { LanguageSelector } from "@/components/LanguageSelector";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navigation = [
@@ -22,19 +20,13 @@ const navigation = [
 
 export function Header() {
   const location = useLocation();
-  const [currentLanguage, setCurrentLanguage] = useState('en');
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="flex items-center">
-            <Shield className="h-8 w-8 text-primary" />
-            <Mountain className="h-6 w-6 text-cultural-green -ml-1" />
-          </div>
-          <span className="text-xl font-bold bg-gradient-river bg-clip-text text-transparent">
-            SafeTourist NE
-          </span>
+          <Shield className="h-8 w-8 text-primary" />
+          <span className="text-xl font-bold">SafeTourist</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -55,10 +47,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center space-x-2">
-          <LanguageSelector 
-            currentLanguage={currentLanguage}
-            onLanguageChange={setCurrentLanguage}
-          />
           <ThemeToggle />
           
           {/* Mobile Navigation */}
