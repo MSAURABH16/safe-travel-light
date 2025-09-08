@@ -60,6 +60,12 @@ export default {
 					DEFAULT: 'hsl(var(--success))',
 					foreground: 'hsl(var(--success-foreground))'
 				},
+				cultural: {
+					red: 'hsl(var(--cultural-red))',
+					orange: 'hsl(var(--cultural-orange))',
+					blue: 'hsl(var(--cultural-blue))',
+					green: 'hsl(var(--cultural-green))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,6 +76,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-dawn': 'var(--gradient-dawn)',
+				'gradient-forest': 'var(--gradient-forest)',
+				'gradient-river': 'var(--gradient-river)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
