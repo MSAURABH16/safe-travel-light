@@ -41,14 +41,11 @@ const Index = () => {
           <div className="flex justify-center mb-6">
             <Shield className="h-16 w-16 text-primary" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            स्मार्ट पर्यटक सुरक्षा
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            SafeTourist
           </h1>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Smart Tourist Safety
-          </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Advanced safety monitoring and emergency response system for tourists in incredible India. 
+            Advanced safety monitoring and emergency response system for tourists. 
             Stay safe, stay connected, explore with confidence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
