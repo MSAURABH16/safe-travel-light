@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import LocationHeatmap from "@/components/LocationHeatmap";
 
 export default function Restaurants() {
   const [restaurants] = useState([
@@ -148,13 +149,14 @@ export default function Restaurants() {
       </div>
 
       <Tabs defaultValue="all" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="all">All Restaurants</TabsTrigger>
           <TabsTrigger value="veg" className="flex items-center gap-2">
             <Leaf className="h-4 w-4" />
             Vegetarian
           </TabsTrigger>
           <TabsTrigger value="non-veg">Non-Vegetarian</TabsTrigger>
+          <TabsTrigger value="map">Location Map</TabsTrigger>
         </TabsList>
 
         <TabsContent value="all" className="space-y-6">
@@ -179,6 +181,10 @@ export default function Restaurants() {
               <RestaurantCard key={restaurant.id} restaurant={restaurant} />
             ))}
           </div>
+        </TabsContent>
+
+        <TabsContent value="map" className="space-y-6">
+          <LocationHeatmap />
         </TabsContent>
       </Tabs>
 
