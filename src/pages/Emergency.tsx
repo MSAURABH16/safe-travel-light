@@ -40,10 +40,12 @@ export default function Emergency() {
   };
 
   const emergencyContacts = [
-    { name: "Local Emergency", number: "911", description: "Police, Fire, Medical" },
-    { name: "Tourist Police", number: "+1 555-0123", description: "24/7 Tourist Support" },
-    { name: "Embassy", number: "+1 555-0456", description: "Consular Services" },
-    { name: "Medical Emergency", number: "+1 555-0789", description: "Ambulance Service" },
+    { name: "National Emergency", number: "112", description: "Police, Fire, Medical" },
+    { name: "Police", number: "100", description: "Police Emergency" },
+    { name: "Fire Service", number: "101", description: "Fire Emergency" },
+    { name: "Ambulance", number: "108", description: "Medical Emergency" },
+    { name: "Tourist Helpline", number: "1363", description: "24/7 Tourist Support" },
+    { name: "Women's Helpline", number: "1091", description: "Women in Distress" },
   ];
 
   return (

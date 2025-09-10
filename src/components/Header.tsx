@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Shield } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import LanguageSelector from "./LanguageSelector";
 
 export function Header() {
   return (
@@ -16,6 +17,7 @@ export function Header() {
         </div>
 
         <div className="flex items-center space-x-2">
+          <LanguageSelector />
           <ThemeToggle />
         </div>
       </div>

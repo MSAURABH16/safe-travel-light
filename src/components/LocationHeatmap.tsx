@@ -41,21 +41,21 @@ const LocationHeatmap = () => {
   const [showGeoFences, setShowGeoFences] = useState(true);
   const [selectedFence, setSelectedFence] = useState<string | null>(null);
 
-  // Mock data for demonstration
+  // Indian locations data
   const heatmapData: HeatmapData[] = [
-    { lat: 26.1445, lng: 91.7362, intensity: 0.8, type: 'safe', label: 'Tourist Hub' },
-    { lat: 26.1465, lng: 91.7382, intensity: 0.6, type: 'safe', label: 'Restaurant Area' },
-    { lat: 26.1425, lng: 91.7342, intensity: 0.9, type: 'caution', label: 'Crowded Market' },
-    { lat: 26.1485, lng: 91.7402, intensity: 0.4, type: 'safe', label: 'Hotel District' },
-    { lat: 26.1405, lng: 91.7322, intensity: 0.7, type: 'danger', label: 'Construction Zone' },
-    { lat: 26.1475, lng: 91.7375, intensity: 0.5, type: 'safe', label: 'Shopping Center' },
+    { lat: 28.6129, lng: 77.2295, intensity: 0.8, type: 'safe', label: 'India Gate Area' },
+    { lat: 28.6139, lng: 77.2090, intensity: 0.6, type: 'safe', label: 'Connaught Place' },
+    { lat: 28.6562, lng: 77.2410, intensity: 0.9, type: 'caution', label: 'Chandni Chowk' },
+    { lat: 28.5535, lng: 77.2588, intensity: 0.4, type: 'safe', label: 'Lotus Temple' },
+    { lat: 28.6276, lng: 77.1734, intensity: 0.7, type: 'danger', label: 'Construction Zone' },
+    { lat: 28.5244, lng: 77.1855, intensity: 0.5, type: 'safe', label: 'Qutub Minar' },
   ];
 
   const geoFences: GeoFence[] = [
     {
       id: 'safe-zone-1',
       name: 'Tourist Safe Zone',
-      center: [26.1445, 91.7362],
+      center: [28.6129, 77.2295],
       radius: 500,
       type: 'safe',
       active: true,
@@ -63,7 +63,7 @@ const LocationHeatmap = () => {
     {
       id: 'restricted-1',
       name: 'Construction Area',
-      center: [26.1405, 91.7322],
+      center: [28.6276, 77.1734],
       radius: 200,
       type: 'restricted',
       active: true,
@@ -71,7 +71,7 @@ const LocationHeatmap = () => {
     {
       id: 'alert-zone-1',
       name: 'High Traffic Zone',
-      center: [26.1425, 91.7342],
+      center: [28.6562, 77.2410],
       radius: 300,
       type: 'alert',
       active: true,
@@ -82,7 +82,7 @@ const LocationHeatmap = () => {
     if (!mapRef.current) return;
 
     // Initialize map
-    mapInstance.current = L.map(mapRef.current).setView([26.1445, 91.7362], 15);
+    mapInstance.current = L.map(mapRef.current).setView([28.6129, 77.2295], 13);
 
     // Add tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
