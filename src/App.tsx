@@ -9,6 +9,7 @@ import { Header } from "@/components/Header";
 import { AppSidebar } from "@/components/AppSidebar";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
+import TripItinerary from "./pages/TripItinerary";
 import Register from "./pages/Register";
 import Emergency from "./pages/Emergency";
 import Places from "./pages/Places";
@@ -38,6 +39,7 @@ const App = () => (
                   <Routes>
                     <Route path="/" element={<Index />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/trip-itinerary" element={<TripItinerary />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/emergency" element={<Emergency />} />
                     <Route path="/places" element={<Places />} />

@@ -9,7 +9,8 @@ import {
   Wifi, 
   Users, 
   UserPlus, 
-  AlertTriangle 
+  AlertTriangle,
+  CalendarDays
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -28,6 +29,7 @@ import {
 const navigationItems = [
   { title: "Home", url: "/", icon: Home },
   { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
+  { title: "Trip Itinerary", url: "/trip-itinerary", icon: CalendarDays },
 ];
 
 const servicesItems = [
