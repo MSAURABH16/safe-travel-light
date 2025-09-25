@@ -30,14 +30,14 @@ export default function TripItinerary() {
   const [tripPlans, setTripPlans] = useState<DayPlan[]>([
     {
       day: 1,
-      date: "2024-01-15",
+      date: "2025-03-12",
       items: [
         {
           id: "1",
           title: "Arrive in Mumbai",
           location: "Chhatrapati Shivaji Maharaj International Airport",
-          time: "10:00",
-          duration: "2h",
+          time: "09:15",
+          duration: "3h 30m",
           description: "Land and travel to hotel",
           category: "transport"
         },
@@ -45,8 +45,8 @@ export default function TripItinerary() {
           id: "2",
           title: "Check-in at Hotel",
           location: "The Taj Mahal Palace, Mumbai",
-          time: "12:00",
-          duration: "1h",
+          time: "12:45",
+          duration: "45m",
           description: "Check-in and freshen up",
           category: "rest"
         },
@@ -54,8 +54,8 @@ export default function TripItinerary() {
           id: "3",
           title: "Lunch at Leopold Cafe",
           location: "Leopold Cafe, Colaba",
-          time: "13:30",
-          duration: "1.5h",
+          time: "14:15",
+          duration: "1h 45m",
           description: "Traditional Mumbai street food experience",
           category: "food"
         },
@@ -63,8 +63,8 @@ export default function TripItinerary() {
           id: "4",
           title: "Gateway of India",
           location: "Apollo Bandar, Colaba",
-          time: "15:30",
-          duration: "2h",
+          time: "16:30",
+          duration: "2h 15m",
           description: "Visit the iconic monument and waterfront",
           category: "sightseeing"
         }
@@ -72,14 +72,14 @@ export default function TripItinerary() {
     },
     {
       day: 2,
-      date: "2024-01-16",
+      date: "2025-03-13",
       items: [
         {
           id: "5",
           title: "Marine Drive Walk",
           location: "Marine Drive, Mumbai",
-          time: "07:00",
-          duration: "1.5h",
+          time: "06:45",
+          duration: "1h 20m",
           description: "Morning walk along Queen's Necklace",
           category: "activity"
         },
@@ -87,8 +87,8 @@ export default function TripItinerary() {
           id: "6",
           title: "Breakfast at Cafe Mocha",
           location: "Linking Road, Bandra",
-          time: "09:00",
-          duration: "1h",
+          time: "08:30",
+          duration: "55m",
           description: "Continental breakfast with sea view",
           category: "food"
         }
@@ -149,7 +149,7 @@ export default function TripItinerary() {
       title: newItem.title!,
       location: newItem.location!,
       time: newItem.time!,
-      duration: newItem.duration || "1h",
+      duration: newItem.duration || "1h 30m",
       description: newItem.description || "",
       category: newItem.category as ItineraryItem["category"]
     };
@@ -255,7 +255,7 @@ export default function TripItinerary() {
                       id="duration"
                       value={newItem.duration || ""}
                       onChange={(e) => setNewItem({...newItem, duration: e.target.value})}
-                      placeholder="e.g., 2h"
+                      placeholder="e.g., 2h 30m"
                     />
                   </div>
                 </div>
