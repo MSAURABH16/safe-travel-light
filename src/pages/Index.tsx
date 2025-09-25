@@ -28,8 +28,8 @@ const Index = () => {
   ];
 
   const stats = [
-    { number: "10K+", label: "Protected Tourists", icon: <Users className="h-5 w-5" /> },
-    { number: "99.9%", label: "Safety Rate", icon: <CheckCircle className="h-5 w-5" /> },
+    { number: "8.7K+", label: "Protected Tourists", icon: <Users className="h-5 w-5" /> },
+    { number: "98.7%", label: "Safety Rate", icon: <CheckCircle className="h-5 w-5" /> },
     { number: "24/7", label: "Support Available", icon: <Clock className="h-5 w-5" /> },
   ];
 

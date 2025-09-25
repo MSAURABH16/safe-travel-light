@@ -53,8 +53,8 @@ export default function Dashboard() {
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">1,234</div>
-            <p className="text-xs text-muted-foreground">+20.1% from last hour</p>
+            <div className="text-2xl font-bold">1,847</div>
+            <p className="text-xs text-muted-foreground">+12.3% from last hour</p>
           </CardContent>
         </Card>
 
@@ -64,8 +64,8 @@ export default function Dashboard() {
             <CheckCircle className="h-4 w-4 text-success" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">1,180</div>
-            <p className="text-xs text-muted-foreground">95.6% safety rate</p>
+            <div className="text-2xl font-bold">1,763</div>
+            <p className="text-xs text-muted-foreground">95.4% safety rate</p>
           </CardContent>
         </Card>
 
@@ -75,8 +75,8 @@ export default function Dashboard() {
             <AlertTriangle className="h-4 w-4 text-warning" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">3</div>
-            <p className="text-xs text-muted-foreground">2 resolved today</p>
+            <div className="text-2xl font-bold">7</div>
+            <p className="text-xs text-muted-foreground">4 resolved today</p>
           </CardContent>
         </Card>
       </div>
